@@ -60,19 +60,35 @@ body {
     background-color: #FFCA7C;
 }
 .container {
-    background-color: #82C9FF;
-    width: 80%;
+	background-color: #82C9FF;
+	margin: 0 auto;
+	width: 80%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 200px 2fr 1fr 1fr 100px;
+	grid-gap: 10px;
 }
 h1 {
     color: #4985B3;
 }
-
+h1, h2, p, li {
+	padding: 1.5rem;
+}
 footer img {
 	width: 50px;
 }
-
-.container {
-	display: grid;
-	grid-template-columns: 100px 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px 100px;
+header {
+	background-color: #FEF2F0;
+	grid-column-start: 2;
+	grid-column-end: 7;
+}
+main {
+	background-color: #CCBAAB;
+	grid-column: 1 / 8;
+	grid-row: 2 / 5;
+}
+footer {
+	background-color: #997253;
+	grid-area: 5 / 1 / 6 / 9;
 }
