@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ej 3, galería. Imágenes.</title>
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <style>
+        .ocultar {
+            display: none;
+        }
+        .lg-sub-html h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+        }
+        .lg-sub-html p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <section>
+            <h1>Galería.</h1>
+            <p>Aquí una muestra de mis trabajos.</p>
+
+        <div id="lightgallery">
+            <a href="images/james_brown1.jpg" data-sub-html="#caption1">
+                <img src="images/james_brown1_tb.jpg" alt="James Brown 1."/>
+            </a>
+            <a href="images/james_brown2.jpg" data-sub-html="#caption2">
+                <img src="images/james_brown2_tb.jpg" alt="James Brown 2."/>
+            </a>
+            <a href="images/james_brown3.jpg">
+                <img src="images/james_brown3_tb.jpg" />
+            </a>
+            <a href="images/james_brown4.jpg">
+                <img src="images/james_brown4_tb.jpg" />
+            </a>
+            <a href="images/james_brown5.jpg">
+                <img src="images/james_brown5_tb.jpg" />
+            </a>
+        </div>
+        <div id="caption1" class="ocultar">
+            <h4>James Brown 1.</h4>
+            <p class="parrafo">Primera ilustración sobre James Brown.</p>
+        </div>
+        <div id="caption2" class="ocultar">
+            <h4>James Brown 2.</h4>
+            <p class="parrafo">Segunda ilustración de James Brown.</p>
+        </div>
+  
+        </section>
+    </div>
+
+<!-- jQuery version must be >= 1.8.0; -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/lightgallery-all.js"></script>
+
+<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="modules/lg-thumbnail.min.js"></script>
+<script src="modules/lg-fullscreen.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+</script>
+
+
+</body>
+</html>
