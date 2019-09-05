@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes.</title>
+    <link rel="stylesheet" href="css/estilos-images.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imágenes responsivas</h1>
+            <p>Se requiere en la etiqueta, el atributo media y srcset.</p>
+        </header>
+        <main>
+            <section>
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/james_brown1.jpg">
+                    <source media="(min-width: 460px)" srcset="images/james_brown1_med.jpg">
+                    <source media="(min-width: 0px)" srcset="images/james_brown1_tb.jpg">
+                    <img src="images/james_brown1.jpg" alt="Ilustración sobre James Brown.">
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <p>Aquí va el footer.</p>
+        </footer>
+    </div>
+</body>
+</html>
