@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto+Condensed:400,700&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+}
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+p {
+    font-family: 'Merriweather', serif;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.6rem;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+section {
+    border: solid 1px black;
+}
+#cat1 {
+    width: 350px;
+    float: left;
+    shape-outside: circle(closest-side at 109px 112px);
+}
+#bart {
+    height: 400px;
+    float: left;
+    shape-outside: url(../images/bart.png);
+    shape-margin: .5rem;
+}
+#cat2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    shape-outside: polygon(60.75% 17.76%, 16.69% 15.23%, 0% 100%, 59.75% 99.32%, 80.04% 95.63%, 71.79% 78.42%, 74.14% 59.1%, 67.21% 35.78%, 72.12% 13.12%);
+}
+#cat3 {
+    width: 450px;
+    float: left;
+    shape-outside: polygon(60.75% 17.76%, 40.33% 16.24%, 26.69% 18.27%, 14.02% 14.54%, 19.98% 36.73%, 14.49% 44.86%, 14.01% 66.79%, 6.71% 74.19%, 4.31% 89.65%, 18% 100.61%, 59.75% 99.32%, 65.16% 95.06%, 71.38% 82.57%, 71.79% 78.42%, 67.43% 69.47%, 71.03% 60.62%, 71.15% 47.23%, 67.21% 35.78%, 72.12% 13.12%);
+    clip-path: polygon(60.75% 17.76%, 40.33% 16.24%, 26.69% 18.27%, 14.02% 14.54%, 19.98% 36.73%, 14.49% 44.86%, 14.01% 66.79%, 6.71% 74.19%, 4.31% 89.65%, 18% 100.61%, 59.75% 99.32%, 65.16% 95.06%, 71.38% 82.57%, 71.79% 78.42%, 67.43% 69.47%, 71.03% 60.62%, 71.15% 47.23%, 67.21% 35.78%, 72.12% 13.12%);
+}
