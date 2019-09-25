@@ -1,0 +1,32 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+header {
+    /* background-image: url(../images/shahadat-shemul-voM1Z9cGPCU-unsplash.jpg); */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+li a {
+    text-decoration: none;
+    padding: 1rem;
+}
+main {
+    background-image: url(../images/shahadat-shemul-voM1Z9cGPCU-unsplash.jpg);
+}
+img {
+    height: 150px;
+}
+.icon-twitter {
+    /* filter:  */
+}
+.icon-twitter:hover,
+.icon-twitter:focus {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
