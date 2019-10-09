@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap');
+.container {
+    display: grid;
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+header {
+    background-color: darksalmon;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+li a{
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    background-color: #b10202;
+    color: white;
+}
+li a:visited {
+    color: black;
+}
+main {
+    display: flex;
+}
+section {
+    padding: 2rem;
+}
+.uno {
+    /* background-color: blueviolet; */
+    background-image: url(../images/fondo1.svg);
+    background-repeat: no-repeat;
+    flex-basis: 20%;
+}
+.uno p {
+    color: blueviolet;
+}
+.dos {
+    background-color: brown;
+    flex-grow: 2;
+}
+.tres {
+    background-color: blue;
+}
+footer {
+    background-color: darkolivegreen;
+}
+footer p {
+    padding: .5rem;
+}
